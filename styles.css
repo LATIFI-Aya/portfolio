@@ -53,24 +53,25 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.pic img{
-    width: 350px;
-    height: 400px;
-    border-radius: 50%;
 
+
+.ff{
+    width: 40%;
+    height: 100px;
 }
 .header-text{
+    width: 80%;
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 20px;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 20px;
 }
 .btn {
     display: flex;
     padding: 8px;
-    width: 100px;
+    width: 200px;
     background-color: #3b82f6;
     border-radius: 2px;
     margin-top: 8px;
@@ -212,3 +213,42 @@ form .btn2{
     color: red;
 }
 
+/**/
+.tools-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.tools-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.tools-section text{
+    text-align: center;
+    font-size: 20px;
+}
+.tools-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tools-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.tools-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+.tools-section .cells .cell span{
+    font-size: 18px;
+}
