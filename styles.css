@@ -122,7 +122,8 @@ ul li a:hover{
     margin-right: 20px;
 }
 .social-links a:hover{
-    color: navy;
+    color:#3b82f6;
+    ;
 }
 
 :root{
@@ -177,10 +178,10 @@ ul li a:hover{
     color: #fff;
 }
 .iconn .fa-linkedin{
-    color: #0077B5;
+    color: #3b82f6;
 }
 .lnk:hover{
-    background: #0077B5;
+    background: #3b82f6;
 }
 .iconn .fa-github{
     color: #000;
@@ -265,9 +266,65 @@ ul li a:hover{
 
 }
 .services-list div:hover{
-    background: navy;
+    background: #3b82f6;
     transform: translateY(-10px);
 }
+/*  Projects section */
+#Projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+  }
+.title{
+    padding: 20px;
+    color: #747474;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  .box1{
+    flex-basis: 25%;
+    padding: 10px;
+    height: 280px;
+    border-radius: 8px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    box-shadow: 0.5px 10px #e6e6e6;
+    justify-content: space-between;
+  }
+  .box1 img{
+    display: flex;
+    justify-content: center;
+      width:  250px;
+      height: 150px;
+  }
+  .box1 p{
+    font-size: 14px;
+  }
+  .btn {
+    display: flex;
+    padding: 5px;
+    width: 100px;
+    background-color: #3b82f6;
+    border-radius: 2px;
+    margin-top: 8px;
+    color: #fff;
+    margin-left: auto; 
+    text-align: center;
+  }
+  
+
 /*---- contact----*/
 .contact-left{
     flex-basis: 35%;
@@ -331,7 +388,7 @@ form .btn2{
     color: red;
 }
 
-/**/
+/*tools-section*/
 .tools-section{
     padding: 0 50px;
     margin-bottom: 100px;
