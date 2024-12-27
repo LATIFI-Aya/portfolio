@@ -6,37 +6,62 @@
     <title>aya LATIFI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
-    <!----
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/mini-logo1.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        
-        
-        <div class="header-text">
-            <div class="pic"> 
-                <img src="images/webdev.4d72dbba32efee3890cef9bcacce7aa7.svg" alt="">
-            </div>
-        <div class="ff">
-            <h1>Hi i am aya LATIFI <br> FULL STACK DEVLOPPER</h1>
-            <a href="images/CV LATIFI Aya.pdf" download class="btn btn2">Download CV</a>
-        </div>
-        </div> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+<div class="main">
+    <div class="navbar">
+        <img src="images/mini-logo1.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+            <img src="images/moon.png" id="icon">
+    </div>   
+     
+    <div class="info">
+        <h3>Hi, I'm Aya LATIFI.</h3>
+        <h1><span>FULL STACK DEVLOPPER</span></h1>
+        <h3>Lorem ipsum dre impedit ex  rem enim non deleniti eveniet. <br> Voluptas, , vel?</h3>
+        <a href="images/CV LATIFI Aya.pdf">Download CV</a>
     </div>
-</div>
--->
 
-<!---- about
+    <div class="image">
+        <img src="images/webdev.4d72dbba32efee3890cef9bcacce7aa7.svg" class="boy">
+    </div>
+
+    <div class="media">
+        <div class="iconn lnk">
+            <a class="social-icon"  href="https://www.linkedin.com/in/aya-latifi-bba06819b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <i class="fa-brands fa-linkedin" target=""></i>
+                 <span>linkedin</span>
+            </a>
+            
+        </div>
+
+        <div class="iconn git">
+            <a class="social-icon"  href="https://github.com/LATIFI-Aya" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>github</span>
+        </a>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<!---- about---->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -56,19 +81,21 @@
         </div>
     </div>
 </div>
----->
 
-<!---- s-->
+
+<!---- ---->
 <section id="tools" class="tools-section">
 <h2>Technologies and Tools</h2>
 <div class="text">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt mollitia eum aliquam quam placeat at necessitatibus, est cumque ad libero minus corporis aliquid sapiente qui nulla odio adipisci soluta maxime?
 </div>
-<div class="cells">
+<div class="cells" data-aos="fade-up" data-aos-duration="3000">
+    
     <div class="cell">
         <img src="images/images (1).png" alt="html logo">
         <span>HTML</span>
     </div>
+
 
     <div class="cell">
         <img src="images/images (2).png" alt="css logo">
@@ -80,18 +107,20 @@
         <span>JavaScript</span>
     </div>
 
-    <div class="cell">
+    <div class="cell" >
         <img src="images/Qgis-icon-3.0.png" alt="html logo">
         <span>QGIS</span>
     </div>
 
     <div class="cell">
-        <img src="images/sql-logo.png" alt="html logo">
+        <img src="images/sql.webp" alt="html logo">
         <span>SQL</span>
     </div>
 </div>
 </section>
-<!----services
+
+
+<!----services---->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My services</h1>
@@ -117,10 +146,10 @@
         </div>
     </div>
 </div>
----->
+
 <!-------->
 
-<!----contact
+<!----contact---->
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -146,6 +175,18 @@
     </div>
     <div class="copyright"><p>Made with <i class="fa-solid fa-heart"></i>by aya LATIFI</p></div>
 </div>
----->
+
+
+<script>
+    var icon = document.getElementById("icon")
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.jpeg";
+        }else{
+            icon.src = "images/moon.png";
+        }
+    }
+</script>
 </body>
 </html>
