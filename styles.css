@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 body{
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     background: #ffff ;
     color: black;
 }
@@ -191,13 +191,13 @@ ul li a:hover{
 }
 */
 
-/* responsive*/
+/* responsive
 @media only screen and (min-width: 320px) and (max-width: 991px) {
     .media{
         flex-direction: column;
     }
 }
-
+*/
 
 
 
@@ -284,7 +284,7 @@ ul li a:hover{
   }
 .title{
     padding: 20px;
-    color: #747474;
+    color: #3b82f6;
   }
   .row{
     display: flex;
@@ -324,31 +324,86 @@ ul li a:hover{
     text-align: center;
   }
   
-
-/*---- contact----*/
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
+ /*---- contact---- */
+ .contact-touch{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ .contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+ }
+ .contact-left-title h2{
+    font-weight: 600;
+    color:#3b82f6;
+    font-size: 40px;
+    margin-bottom: 5px;
+ }
+ .contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    font-size: 40px;
+    background-color:#3b82f6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ }
+ .contact-{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+ }
+ .contact-left textarea{
+    height: 140px;
+    padding: 15px;
+    border-radius: 20px;
+ }
+ .contact-:focus{
+    border: 2px solid #ff994f;
+ }
+ .contact-::placeholder{
+    color: #a9a9a9;
+ }
+ .contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #3b82f6 /*#fa6d86*/,#ff994f );
+    cursor: pointer;
+ }
+ .contact-right{
+    width: 500px;
+ }
+ .contact-right p{
     margin-top: 30px;
 }
-.contact-left p i{
-    color: navy;
+.contact-right p i{
+    color: #3b82f6;
     margin-right: 15px;
     font-size: 25px;
-
 }
-.social-icons{
+ .social-icons{
     margin-top: 30px;
 }
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: navy;
+    color: #3b82f6;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -356,27 +411,7 @@ ul li a:hover{
     color: #ababab;
     transform: translateY(-5px);
 }
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #ffff;
-    font-size: 18PX;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.copyright{
+ .copyright{
     width: 100%;
     text-align: center;
     padding: 25px;
@@ -387,6 +422,15 @@ form .btn2{
 .copyright i{
     color: red;
 }
+ @media (max-width:800px) {
+    .contact-{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+ }
+
 
 /*tools-section*/
 .tools-section{

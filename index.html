@@ -85,7 +85,7 @@
 
 <!---- tools-section---->
 <section id="tools" class="tools-section">
-    <h2>Technologies and Tools</h2>
+    <h2 class="title">Technologies and Tools</h2>
     <div class="text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt mollitia eum aliquam quam placeat at necessitatibus, est cumque ad libero minus corporis aliquid sapiente qui nulla odio adipisci soluta maxime?
     </div>
@@ -124,7 +124,7 @@
 <!----services---->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My services</h1>
+        <h1 class="title">My services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
@@ -151,7 +151,7 @@
 
 <!--Projects section -->
 <div id="Projects">
-    <h2 class="title"> Projects</h2>
+    <h1 class="title"> Projects</h1>
     <div class="row">
 
         <div class="box1">
@@ -189,34 +189,33 @@
 
 </div>
 
-<!----contact---->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact me </h1>
+<!---contact----->
+<div class="contact-touch">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="f3928e94-f246-41a1-8714-e0c39110cfc8">
+        <input type="text" name="name" placeholder="Your Name" class="contact-" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-" required >
+        <textarea name="message" placeholder="Your Message" class="contact-" required></textarea>
+        <button type="submit" class="btn btn2"> Submit </button>
+    </form>
+    <div class="contact-right">
+        <h1 class="sub-title">Contact me </h1>
                 <p><i class="fa-solid fa-paper-plane"></i>ayalatifi6@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>+212663415222</p>
                 <div class="social-icons">
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-github"></i></a>
                 </div>
-                
-            </div>
-            <div class="contact-right">
-                <form action="">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
-        </div>
     </div>
-    <div class="copyright"><p>Made with <i class="fa-solid fa-heart"></i>by aya LATIFI</p></div>
+    
 </div>
+<div class="copyright"><p>Made with <i class="fa-solid fa-heart"></i>by aya LATIFI</p></div>
 
-
+<!----
 <script>
     var icon = document.getElementById("icon")
     icon.onclick = function(){
@@ -228,5 +227,6 @@
         }
     }
 </script>
+--->
 </body>
 </html>
